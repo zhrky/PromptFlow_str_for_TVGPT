@@ -10,6 +10,8 @@ This is graph structure of my prompt flow :
 ### Prerequisites
 
 - Azure subscription
+
+  
 **Note** Azure Account - If you're new to Azure, get an Azure account for [free](https://azure.microsoft.com/en-us/free/?wt.mc_id=online-social-sicotin)
  and you'll get some free Azure credits to get started.
 Azure subscription with access enabled for the Azure OpenAI Service - For more details, see the [Azure OpenAI Service documentation on how to get access](https://learn.microsoft.com/en-us/azure/ai-services/openai/overview#how-do-i-get-access-to-azure-openai).
