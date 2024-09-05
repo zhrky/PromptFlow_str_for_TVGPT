@@ -26,6 +26,7 @@ Azure OpenAI resource - For these samples, you'll need to deploy models like GPT
 
 - [Azure Machine Learning workspace](https://azure.microsoft.com/en-us/products/machine-learning)
   
+  
 ![image](https://github.com/user-attachments/assets/13d78b66-b84d-459a-930c-9365fddb13fc)
 
 ### Define Inputs & Outputs 
@@ -40,9 +41,13 @@ Define your Prompt Flow input and outputs like this :
 To get a more accurate answer, you need to extract intent from the question you want to ask in a way that AI can understand. 
 To do this:
 1. Create LLM in Azure Machine Learning Studio.
+
+
 ![image](https://github.com/user-attachments/assets/e8d33897-c09a-4410-a26c-1336b5775601)
 
 2. Name the LLM you added. 
+
+
 ![image](https://github.com/user-attachments/assets/ee8bc42e-0651-4083-b765-2a4e9c41a6d1)
 
 3. Give Connection, Api, deployment_name and response_format to the input section, chat_history and question.
@@ -51,6 +56,8 @@ To do this:
 
 4. Take the extract_query.txt content in this repo and paste it into the LLM.
 Note: This shows it how to extract intent. You can also make this LLM work by binding it to a condition using the Activate Config feature.
+
+
 ![image](https://github.com/user-attachments/assets/0c82027f-a94e-42e4-8ec9-aedcf776e603)
 
 ### Get Data from API
@@ -59,8 +66,12 @@ According to the intent we extracted, we will send a series movie query from pub
 
 Accordingly:
 1. Add Python code and give it a name.
+
+
 ![image](https://github.com/user-attachments/assets/abf8713e-7b0a-412f-8e1f-0cfabd7e4fd0)
 2. For country_code as input, give 'TR' and the output that was just returned from extract_query.txt.
+
+
 ![image](https://github.com/user-attachments/assets/a64ea030-d013-492d-9185-6c0b79cee075)
 
 3.Take the get_data.py code from this repo and paste it.
@@ -71,6 +82,8 @@ We will manually get the EPG data and put it into the blob. Then we will read it
 
 For this:
 1. Add Python code and give it a name. We will give the Connection string, container name and blob names of Azure blob Storage as input. Since we defined these in the input section at the beginning, there is no need to rewrite them in the code.
+
+
 ![image](https://github.com/user-attachments/assets/2759224a-191a-4fff-a315-d4f6c340a058)
 
 2. Get and paste the get_EPG_blob.py from this repo.
@@ -80,9 +93,12 @@ For this:
 We will send the data we created and the data received as a result of the query to the LLM, which we call chat, and we will write a prompt here that includes the prompt's capabilities, instructions, and how it should respond.
 
 1. Enter the connection, APi and deployment_name and response_format.
+
+
 ![image](https://github.com/user-attachments/assets/4d72d74c-9098-43d6-8532-ac28743835d8)
 
 2.Give chat_history, contexts, question and user_info as input
+
 ![image](https://github.com/user-attachments/assets/2c51cf69-6c6c-45b5-96de-189d4cbf2929)
 
 
