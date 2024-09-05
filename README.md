@@ -29,14 +29,14 @@ Azure OpenAI resource - For these samples, you'll need to deploy models like GPT
   
 ![image](https://github.com/user-attachments/assets/13d78b66-b84d-459a-930c-9365fddb13fc)
 
-### Define Inputs & Outputs 
+## Define Inputs & Outputs 
 
 Define your Prompt Flow input and outputs like this :
 
 
 ![image](https://github.com/user-attachments/assets/d3be0207-32c2-40fb-b755-e390fac78e6c)
 
-### Extract Query
+## Extract Query
 
 To get a more accurate answer, you need to extract intent from the question you want to ask in a way that AI can understand. 
 To do this:
@@ -60,7 +60,7 @@ Note: This shows it how to extract intent. You can also make this LLM work by bi
 
 ![image](https://github.com/user-attachments/assets/0c82027f-a94e-42e4-8ec9-aedcf776e603)
 
-### Get Data from API
+## Get Data from API
 
 According to the intent we extracted, we will send a series movie query from public APIs. I used tvmaze and rapid API sites here. If desired, another site can be used.
 
@@ -78,7 +78,7 @@ Accordingly:
 
 3.Take the get_data.py code from this repo and paste it.
 
-### EPG data
+## EPG data
 
 We will manually get the EPG data and put it into the blob. Then we will read it from there.
 
@@ -90,7 +90,7 @@ For this:
 
 2. Get and paste the get_EPG_blob.py from this repo.
 
-### Chat 
+## Chat 
 
 We will send the data we created and the data received as a result of the query to the LLM, which we call chat, and we will write a prompt here that includes the prompt's capabilities, instructions, and how it should respond.
 
@@ -108,5 +108,11 @@ We will send the data we created and the data received as a result of the query 
 
 ## TEST TIME 
 After starting the start compute session in the upper right corner of the page, you can start testing from the chat button.
+
+![image](https://github.com/user-attachments/assets/7939f839-25d1-49f0-88a1-847ee88f8b4c)
+
+Test Example :
+
+![image](https://github.com/user-attachments/assets/9068fc00-ea13-4433-a686-9bce8ea3cb1c)
 
 
