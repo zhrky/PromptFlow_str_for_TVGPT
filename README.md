@@ -69,6 +69,8 @@ Accordingly:
 
 
 ![image](https://github.com/user-attachments/assets/abf8713e-7b0a-412f-8e1f-0cfabd7e4fd0)
+
+
 2. For country_code as input, give 'TR' and the output that was just returned from extract_query.txt.
 
 
